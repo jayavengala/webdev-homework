@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
 }
 
@@ -9,4 +9,43 @@ body {
 }
 
 .nav-link {
+} */
+body{
+  margin: 0;
+  width: 100%;
+}
+nav {
+  background-color: green;
+  margin: 0;
+  position:fixed;
+  padding-left: 0px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  width:100%;
+  padding: 14px 16px;
+}
+a:hover {
+  background-color: orange;
+  color: black;
+  width: 100%;
+  padding: 14px 16px;
+}
+
+ul {
+  margin: 0;
+  text-align:left;
+  width: 100%;
+  padding-left: 0px;
+  padding-bottom: 13px;
+  padding-top: 14px;
+}
+li {
+  display:inline;
+  color:white;
+  width:100%;
+  padding-left: 0px;
+  padding-bottom: 16px;
+
 }

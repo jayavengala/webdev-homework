@@ -1,3 +1,21 @@
 .container {
   width: 50vw;
+  margin:auto;
+}
+p::first-line {
+  font-weight: bold;
+}
+
+img {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+img {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
 }

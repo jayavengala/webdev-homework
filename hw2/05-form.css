@@ -1,7 +1,98 @@
-.form {
+div {
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+    display: block;
+    margin-top: 25px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: auto;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
 }
 
-.form-element {
+.sub {
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 45%;
+    font-weight: bold;
+    border: 1px green;
+    border-radius: 3px;
+}
+
+.reset {
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 45%;
+    font-weight: bold;
+    border: 1px green;
+    border-radius: 3px;
+}
+.label-text {
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 12px 12px 0;
+    cursor: pointer;
+  }
+
+::-webkit-input-placeholder {
+    color:black;
+    font-weight: bold;
+}
+
+:-moz-placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+:-ms-input-placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.sub:hover, .reset:hover {
+    background-color: orange;
+    color: black;
+  }
+
+input[type="text"] {
+    width: 60%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 2px solid #cccccc;
+  }
+
+input[type="email"] {
+    width: 60%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 2px solid #cccccc;
+  }
+
+input[type="password"] {
+    width: 60%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 2px solid #cccccc;
+  }
+
+fieldset{
+    padding: 0;
+    border-width: 0;
+    margin: 0;
+  }
+    
+legend {
+    padding: 0;
+    margin-bottom: 0.2em;
+  }
+/* .form-element {
 }
 
 .btn {
@@ -11,4 +102,4 @@
 }
 
 .btn-secondary {
-}
+} */ 
