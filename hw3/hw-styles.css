@@ -3,16 +3,144 @@ h1 {
 }
 
 /* Code for exercise 01-flex */
+ 
+.flex-container-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse; 
+  justify-content: flex-end;
+}
+
+.flex-container-1 .item6 {
+  order: 1;
+}
+.flex-container-1 .item8 {
+  order: 2;
+} 
+.flex-container-1 .item7 {
+  order: -2;
+}
+.flex-container-1 .item4 {
+  order: -1;
+}
 
 /* Code for exercise 02-flex */
 
 .flex-container-2 {
   height: 400px;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items:center;
 }
 
 /* Code for exercise 03-grid */
 
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 2fr 1fr 3fr 2fr;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+  
+.grid-container-1 .item7 {
+  grid-column: span 4;
+  grid-row: 1 / 2;
+}
+
+.grid-container-1 .item2 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.grid-container-1 .item8 {
+  grid-column: span 2;
+}
+
+.grid-container-1 .item6 {
+  grid-column: span 2;
+}
+
 /* Code for exercise 04-grid */
+
+.grid-container-2 {
+  display: grid;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.grid-container-2 .item1 {
+  grid-area: Header;
+}
+
+.grid-container-2 .item2 {
+  grid-area: Jumbotron;
+}
+
+.grid-container-2 .item3 {
+  grid-area: Card1;
+}
+
+.grid-container-2 .item4 {
+  grid-area: Card2;
+}
+.grid-container-2 .item5 {
+  grid-area: Card3;
+}
+.grid-container-2 .item6 {
+  grid-area: Section;
+}
+.grid-container-2 .item7 {
+  grid-area: Footer;
+}
+@media (min-width: 414px) and (max-width: 570px) {
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "Header"
+      "Jumbotron"
+      "Section"
+      "Card1"
+      "Card2"
+      "Footer";
+  }
+  .grid-container-2 .item5 {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      "Header   Header"
+      "Jumbotron Jumbotron "
+      "Section  Section"
+      "Card1  Card2"
+      "Footer Footer";
+  }
+  .grid-container-2 .item5 {
+    display: none;
+  }
+}
+
+@media (min-width: 998px) {
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+    grid-template-areas:
+      "Header   Header  Header"
+      "Jumbotron Jumbotron Jumbotron"
+      "Card1  Card2 Card3"
+      "Section  Section Section"
+      "Footer Footer Footer";
+  }
+}
 
 /* Code for exercise 05-bootstrap-grid */
 
@@ -39,7 +167,6 @@ h1 {
 }
 
 /* Code for exercise 06-bootstrap-form */
-
 form {
   width: 400px;
 }

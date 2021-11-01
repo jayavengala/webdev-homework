@@ -14,9 +14,59 @@
   </head>
   <body>
     <main>
-      <form>
-        <h1>Contact Form</h1>
-      </form>
+      <div class = "mt-5 mb-5">
+        <form class="form-horizontal mx-auto mt-5 bg-light" style = "border: 1px gray;" action="">
+          <h1 class = "pt-3"><b>CONTACT FORM</b></h1><br/>
+            <div class="form-group row  mb-3 mx-auto">
+              <label class="control-label col-sm-4" for="username">Username:</label>
+              <div class="col-sm-8">
+                <input type="name" class="form-control" id="username" name="username">
+              </div>
+            </div>
+            <div class="form-group row  mb-3 mx-auto">
+              <label class="control-label col-sm-4" for="email-id">Email:</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="email-id" name="email-id">
+              </div>
+            </div>
+            <div class="form-group row  mb-3 mx-auto">
+              <label class="control-label col-sm-4" for="password">Password:</label>
+              <div class="col-sm-8">          
+                <input type="password" class="form-control" id="password"  name="password">
+              </div>
+            </div>
+            <div class = "form-group row mx-2 mb-3 row">
+              <span class = "px-2">Would you like to sign up for the newsletter?</span> 
+            <div class="form-check col-12 px-4 mx-2">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio1" checked>
+              <label class="form-check-label" for="Radio1">
+                Yes, sign me up
+              </label>
+            </div>
+            <div class="form-check col-12 px-4 mx-2">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio2">
+              <label class="form-check-label" for="Radio2">
+                No, thank you
+              </label>
+            </div>
+          </div>
+          <div class="form-group row mb-3 mx-auto">
+            <label class="control-label col-sm-4" for="date">Date:</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="date" name="date" placeholder="mm/dd/yyyy">
+            </div>
+          </div>
+          
+          <div class = "row pb-4 mx-auto">
+            <div class = "col-6">
+              <button type="submit" style="width:180px;" class="btn btn-primary">Submit</button>
+            </div>
+            <div class = "col-6">
+              <button type="reset" style="width:180px;" class="btn btn-secondary">Reset</button>
+            </div>
+          </div>
+          </form>
+        </div>
     </main>
   </body>
 </html>
