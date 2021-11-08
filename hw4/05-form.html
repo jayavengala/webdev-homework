@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
     <script defer src="05-form.js"></script>
   </head>
   <body>
     <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
-      </form>
+      <div>
+        <form action="">
+          <h1>REGISTRATION FORM</h1>
+          <!-- Add your code here -->
+          <label for="uname"><b>Username: &nbsp;</b></label>
+          <input type="text" id="uname" name="uname"><br><br/>
+          <label for="ename"><b>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+          <input type="email" id="ename" name="ename"><br><br/>
+          <label for="pname"><b>Password: &nbsp;</b></label>
+          <input type="password" id="pname" name="pname"><br><br/>
+            <legend><b>Would you like to sign up for the newsletter?</b></legend>
+            <input type="radio" id="yes" name="signup">
+            <label for="yes">Yes, Sign me up</label></br>
+            <input type="radio" id="no" name="signup">
+            <label for="no">No, thank you</label>
+            <br><br/>
+          <label for="date"><b>Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+          <input type="text" placeholder="mm/dd/yyyy" id="date" name="date"><br><br/>
+          <input type="submit" name="submit" value="Submit" class="sub" id="submit"/>
+          <input type="reset" name="reset" value="Reset" class="reset" id="reset"/>
+        </form>
+      </div>
     </main>
   </body>
 </html>

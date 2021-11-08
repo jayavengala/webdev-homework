@@ -1,5 +1,28 @@
 const calculateAge = (date1, date2) => {
   // Given two dates, calculate and return the amount of time in between in years and months
+  let result = "";
+  let num = new Date(date1);
+  if (isNaN(num)) {
+    return result.concat("Error : Invalid input provided");
+  }
+  let birthdate = new Date(date2);
+  if (isNaN(birthdate)) {
+    return result.concat("Error : Invalid input provided");
+  }
+  let years = num.getFullYear() - birthdate.getFullYear();
+  let months = num.getMonth() - birthdate.getMonth();
+
+  if (years > 0) {
+    if (months > 1) {
+      return result.concat("Age:  ", years, " years, ", months, " months ");
+    } else if (months == 1) {
+      return result.concat("Age: ", years, " years, ", months, " month ");
+    } else if (months < 1) {
+      return result.concat("Age: ", years, " years, ");
+    }
+  } else {
+    return result.concat("Age: ", months, " months ");
+  }
 };
 
 // Date() formats:
