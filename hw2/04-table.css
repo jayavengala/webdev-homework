@@ -1,11 +1,13 @@
 :root {
   --lightorange: rgba(255, 165, 0, 0.1);
+  padding: 5px;
 }
 
 .table-heading {
   /* use green and white for the colors - these colors are defined in the styles.css file */
   background-color: green;
   color:white;
+  padding: 5px;
 }
 
 .channel {

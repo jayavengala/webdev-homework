@@ -5,6 +5,7 @@ const paragraph = document.createElement("p");
 
 const image = document.createElement("img");
 image.src = "http://placekitten.com/200/200";
+image.alt = "kitten";
 image.style.height = "200px";
 image.style.width = "200px";
 image.style.borderRadius = "50%";
